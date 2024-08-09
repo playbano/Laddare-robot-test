@@ -1,0 +1,92 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x18 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x13b4
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce0
+load:0x403cb700,len:0x33d4
+entry 0x403c8968
+I (00:00:00.162) MAIN: Start APP NISO EV!
+
+I (00:00:00.162) MAIN: This is esp32s3 chip with 2 CPU core(s), WiFi/BLE, 
+I (00:00:00.163) MAIN: silicon revision v0.1, 
+I (00:00:00.168) MAIN: 32MB external flash
+
+I (00:00:00.173) MAIN: Minimum free heap size: 6962916 bytes
+
+I (00:00:00.179) MAIN: Free memory: 6962916 bytes
+I (00:00:00.184) MAIN: IDF version: v5.3-rc1
+I (00:00:00.189) MAIN: SW name: NISO_v0.15
+I (00:00:00.194) NVS: Init of NVS...
+I (00:00:00.204) NVS: Init of NVS performed err = 0
+I (00:00:00.208) GPIO: GPIO Semaphore created.
+I (00:00:00.209) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (00:00:00.219) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (00:00:00.229) gpio: GPIO[42]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (00:00:00.239) gpio: GPIO[7]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (00:00:00.249) gpio: GPIO[19]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (00:00:00.259) gpio: GPIO[38]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (00:00:00.269) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (00:00:00.278) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (00:00:00.288) gpio: GPIO[46]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (00:00:00.298) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 
+V (00:00:00.406) DTC: Semaphore created.
+I (00:00:00.406) NVS: Init DTC...
+D (00:00:00.419) DTC: Init of niso DTC performed err = 0
+E (1401) esp_timer: Task is already initialized
+I (01:00:00.516) OCPP: websocket init
+I (01:00:00.616) MAIN: Read value Config port 1: 1
+I (01:00:00.616) MAIN: Read value Config port 2: 1
+I (01:00:00.617) MAIN: Read value Current port 1 max: 16
+I (01:00:00.622) MAIN: Read value Current port 2 max: 16
+I (01:00:00.628) MAIN: Read Value Use cloud: 1
+I (01:00:00.633) MAIN: Read Value Meter 1: 1
+I (01:00:00.637) MAIN: Read Value Meter 2: 1
+I (01:00:00.642) MAIN: Read Value Meter 3: 1
+I (01:00:00.647) MAIN: Read value Serialnumber: P00000001
+I (01:00:00.653) MAIN: Read value Partnumber: P12345678
+I (01:00:00.659) MAIN: Nbr of connectors configured in NVS ram is 2
+I (01:00:00.666) MAIN: Read value WebsocketPassword: 
+I (01:00:00.672) MAIN: Read value Websocket URI: ws://192.168.0.83/charge_points
+I (01:00:00.679) MAIN: Read Value Main Fuse: 20
+I (01:00:00.685) MAIN: Read Value LB time decrease: 3100
+I (01:00:00.690) MAIN: Read Value LB time increase: 5000
+I (01:00:00.696) MAIN: Read value Wifi name: iThing AB
+I (01:00:00.702) MAIN: Read value Wifi password: Paris2024!
+I (01:00:00.708) MAIN: Read OTA update: 0
+I (01:00:00.713) MAIN: Read value OTA Path: https://decla-nas.synology.me/update/
+I (01:00:00.721) MAIN: Read value OTA file: Niso_EV.bin
+I (01:00:00.727) MAIN: Read Value MQTT log setting: 2
+I (01:00:00.732) MAIN: Number of DTC defined: 23
+I (01:00:00.837) CHARGER: Task started...
+I (01:00:00.852) CHARGER: State 1: CH_STATE_STARTED
+I (01:00:00.853) mqtt: Start MQTT task...
+I (01:00:00.854) mqtt: No Wifi to connect to, waiting...
+I (01:00:00.907) CHARGER: State 2: CH_STATE_STARTED
+I (01:00:00.934) CHARGER: State 1: CH_STATE_IDLE
+I (01:00:00.934) CHARGER: CP value 1: 0.00  
+I (01:00:00.934) CHARGER: PP value 1: 12.98  
+D (01:00:00.939) CHARGER: PWMvalue 100
+D (01:00:00.942) CHARGER: Portlocked status: 0
+I (01:00:00.951) CHARGER: State 2: CH_STATE_IDLE
+I (01:00:00.951) CHARGER: CP value 2: 0.00  
+I (01:00:00.956) CHARGER: PP value 2: 12.96  
+D (01:00:00.961) CHARGER: PWMvalue 100
+D (01:00:00.965) CHARGER: Portlocked status: 0
+I (01:00:01.937) OCPP: Websocket connecting.
+I (01:00:01.938) OCPP: ws password: 
+I (01:00:01.938) OCPP: MAC 348518A1DC84
+I (01:00:01.939) OCPP: Connecting to ws://192.168.0.83/charge_points348518A1DC84
+D (01:00:01.959) OCPP: WEBSOCKET_EVENT_CONNECTED
+V (01:00:01.960) OCPP: WEBSOCKET_EVENT_DATA
+V (01:00:01.960) OCPP: Received opcode=8
+W (01:00:01.960) OCPP: Received closed message with code=1000
+I (01:00:02.861) mqtt: WiFi is connected
+I (01:00:02.959) mqtt: MQTT_EVENT_CONNECTED
+
+
+
